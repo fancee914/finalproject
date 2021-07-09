@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+	border-sizing:border-box;
+}
+
+body {
+	background-color:white;
+}
+
+header nav{
+	width:100%;
+	height:100px;
+}
+
+section {
+	text-align:center;
+}
+
+section h2 {
+	font-size:25px;
+	font-family:'Montserrat', sans-serif;
+	text-align:center;
+	line-height: 1.9;
+}
+
+section p {
+	font-weight:100;
+	font-family:'Roboto Slab', serif;
+	line-height:2;
+}
+
+.wrapper[hidden] {
+	padding:5px;
+	min-width:960px;
+	width:100%;
+	margin:20px auto;
+}
+
+header {
+	padding:10px 10px;
+	text-align:center;
+	background-image:url("../clone-website/images/header-bg.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	min-height:640px;
+	
+}
+
+header h3 {
+	font-size:20px;
+	font-weight:bold;
+	font-family:'Montserrat', sans-serif;
+	float:left;
+	color:#EEC741;
+	margin-left:60px;
+	
+}
+
+  nav ul {
+	  text-align:right;
+	  margin-right:60px;
+}
+
+ul li {
+	list-style:none;
+	display:inline-block;
+	line-height:95%;
+}
+
+ul li a {
+	display:block;
+	text-decoration:none;
+	color:white;
+	font-size:15px;
+	font-family:'Roboto Slab', serif;
+	padding:0 20px;
+	text-align:center;
+}
+
+ul li a:hover {
+	color:#EEC741	
+}
+
+header h2 {
+	font-size:38px;
+	color:white;
+	font-family:'Roboto Slab', serif;
+	font-style:italic;
+}
+
+header p {
+	font-size:72px;
+	color:white;
+	font-weight:bold;
+	line-height:1.9;
+}
+
+button {
+	background-color:#EEC741;
+	color:white;
+	padding:20px;
+	text-align:center;
+	font-size:15px;
+	font-weight:bold;
+	margin:4px 2px;
+}
+
+h4 {
+	font-size:18px;
+	font-family:'Montserrat', sans-serif;
+	line-height:2;
+}
+
+.columns {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	margin:5px;
+}
+
+.column {
+	flex:1;
+	border:1px;
+	margin:5px;
+	padding:5px;
+	background-color:white;
+}
+
+.column:first-child {
+	margin-left:0;
+}
+
+.column:last-child {
+	margin-right:0;
+}
+
+footer {
+	display:flex;
+	justify-content:space-between;
+	background-color:white;
+}
+
+footer nav ul {
+	list-style-type:none;
+	display:flex;
+	justify-content:space-between;
+}
+
+footer nav a {
+	color:#EEC741;
+	margin:30px;
+	font-size:12px;
+	text-decoration:none;
+	display:block;	
+}
+
+footer p {
+	font-size:15px;
+	margin:30px;
+}
+
+@media screen and (max-width:980px){
+	.columns .column {
+		margin-bottom:5px;
+		flex-basis:40%;
+	}
+	
+	.columns .column:nth-last-child(2){
+		margin-right:0;
+	}
+	
+	.columns .column:last-child {
+		flex-basis:100%;
+		margin:0;
+	}
+	
+	@media screen and (max-width:680px){
+		.columns .column {
+			flex-basis:100%;
+			margin:0 0 5px 0;
+		}
+	}
+}
